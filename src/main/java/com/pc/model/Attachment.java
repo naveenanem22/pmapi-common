@@ -47,7 +47,7 @@ public class Attachment {
 	}
 
 	public String getFileType() {
-		return fileType;
+		return (this.getName().split("\\."))[1];
 	}
 
 	public void setFileType(String fileType) {
