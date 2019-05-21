@@ -10,6 +10,16 @@ public class User {
 	@JsonProperty("userName")
 	private String userName;
 
+	@JsonProperty("firstName")
+	private String firstName;
+
+	@JsonProperty("lastName")
+	private String lastName;
+
+	public User() {
+
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -26,9 +36,26 @@ public class User {
 		this.userName = userName;
 	}
 
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", userName=" + userName + "]";
+		return "User [id=" + id + ", userName=" + userName + ", firstName=" + firstName + ", lastName=" + lastName
+				+ "]";
 	}
 
 }
