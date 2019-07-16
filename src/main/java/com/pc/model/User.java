@@ -16,8 +16,19 @@ public class User {
 	@JsonProperty("lastName")
 	private String lastName;
 
+	@JsonProperty("employeeId")
+	private int employeeId;
+
 	public User() {
 
+	}
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
 	}
 
 	public int getId() {
@@ -55,7 +66,7 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", userName=" + userName + ", firstName=" + firstName + ", lastName=" + lastName
-				+ "]";
+				+ ", employeeId=" + employeeId + "]";
 	}
 
 }
